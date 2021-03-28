@@ -1,0 +1,458 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(15, 15, 15);
+}
+.top-header{
+  background-color: rgb(255, 0, 157);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem
+  
+}
+/* <--section starts--> */
+#fb_section {
+  background: rgb(233, 233, 233);
+  height: 10rem;
+  width: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* <--section ends--> */
+
+#fb {
+  font-family: "Roboto", sans-serif;
+  background: #4267b2;
+  text-align: center;
+  padding: 20px 0px;
+  color: white;
+}
+
+/* ==================
+facebook button  styling start
+================== */
+
+.facebook_style_btn {
+  border-radius: 2px;
+  padding: 6px 12px;
+  margin: 30px;
+}
+.facebook_style_dark {
+  box-shadow: 0 1px 0 0 #4d73bf;
+  background: #4267b2;
+  border: 2px solid #4267b2;
+  color: white;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: 0 1px 0 #3359a5;
+  outline: none;
+}
+.facebook_style_dark:hover {
+  background: #496299;
+}
+.facebook_style_dark:active {
+  background: #1c5ae2;
+}
+
+.facebook_style_light {
+  background: rgb(243, 243, 243);
+  border: solid 1px rgb(235, 235, 235);
+  color: rgb(59, 59, 59);
+  outline: none;
+  font-family: "Roboto";
+}
+.facebook_style_light:hover {
+  background: rgb(173, 170, 170);
+}
+.facebook_style_light:active {
+  background-color: rgb(185, 185, 185);
+  border: 1px solid rgb(185, 185, 185);
+}
+
+/* ==================
+facebook button  styling end
+================== */
+
+/* ==================
+3d button styling start
+================== */
+
+.btn2 {
+  height: 10rem;
+  width: 30rem;
+  background-color: rgb(0, 219, 219);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 15rem;
+}
+
+.btn_3d_header {
+  color: white;
+  background-color: tomato;
+  padding: 20px 0px;
+  text-align: center;
+  font-family: "Roboto";
+  text-shadow: 2px 1px rgb(216, 77, 53);
+  font-size: 1.2rem;
+}
+
+.btn-3d-12 {
+  text-align: center;
+}
+.btn_3d_1 {
+  background-color: orangered;
+  color: white;
+  outline: none;
+  border: none;
+  margin: 30px 10px;
+  padding: 10px 25px;
+  font-family: "Arial";
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: -6px 6px 0 hsl(16, 100%, 30%);
+}
+.btn_3d_1:hover {
+  background: hsl(16, 100%, 45%);
+}
+.btn_3d_1:active {
+  background-color: hsl(16, 100%, 35%);
+  position: relative;
+  top: 3px;
+  left: -3px;
+  box-shadow: -3px 3px 0 hsl(16, 100%, 30%);
+}
+.btn_3d_1::before {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 0;
+  width: 0;
+
+  border: solid 6px transparent;
+  border-right: solid 6px hsl(16, 100%, 30%);
+  border-left-width: 0;
+  margin: -10px 0px 0px -31px;
+  overflow: 1;
+}
+.btn_3d_1::after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 0;
+  width: 0;
+
+  border: solid 6px transparent;
+  border-top: solid 6px hsl(16, 100%, 30%);
+  border-bottom-width: 0;
+  margin: 10px 0px 0px 98px;
+  overflow: 1;
+}
+
+.btn_3d_1:active::before {
+  border: solid 3px transparent;
+  border-right: solid 3px hsl(16, 100%, 30%);
+  border-left-width: 0;
+  margin: -10px 0px 0px -28px;
+  overflow: 1;
+}
+.btn_3d_1:active::after {
+  border: solid 3px transparent;
+  border-top: solid 3px hsl(16, 100%, 30%);
+  border-bottom-width: 0;
+  margin: 10px 0px 0px 104px;
+}
+
+.btn_3d_2 {
+  position: relative;
+
+  background: #ecd300;
+  background: -webkit-radial-gradient(#f48c06, #dc2f02);
+  font-size: 1.4rem;
+  text-shadow: 0 -1px 0 #c32d07;
+  border: solid 1px #e85d04;
+  border-radius: 100%;
+  height: 5rem;
+  width: 5rem;
+  outline: none;
+  color: white;
+  font-family: "Arial";
+  font-weight: 700;
+  box-shadow: inset 0 1px 0 #dc2f02, 0 2px 0 #d00000, 0 3px 0 #9d0208,
+    0 4px 0 #6a040f, 0 5px 0 #370617, 0 6px 0 #03071e;
+}
+.btn_3d_2:hover {
+  background: -webkit-radial-gradient(#ffba08, #d00000);
+  border: solid 1px #ff3300;
+}
+.btn_3d_2:active {
+  box-shadow: inset 0 1px 0 #dc2f02, 0 2px 0 #d00000, 0 3px 0 #9d0208,
+    0 4px 0 #6a040f;
+  position: relative;
+  top: 3px;
+}
+/* ==================
+3d button styling end
+================== */
+
+/* ==================
+gradient styling start
+================== */
+.gradient_btn_12 {
+  background: #ffffff;
+  height: 10rem;
+  width: 30rem;
+  margin: 5rem 0px;
+}
+.Gradient_btn_header {
+  background: orangered;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Arial";
+}
+
+.gradient_btn_1 {
+  margin: 10px 10px;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  background-color: #ffffff;
+  border: solid 10px transparent;
+  border-image: linear-gradient(to top right, orangered, yellow);
+  border-image-slice: 1;
+  color: black;
+  font-family: "Roboto";
+}
+.gradient_btn_1:hover {
+  background-image: linear-gradient(to top right, orangered, yellow);
+  color: white;
+}
+
+.gradient_btn_2 {
+  margin: 10px 10px;
+  outline: none;
+  z-index: 1;
+  display: inline-block;
+  padding: 10px 0px;
+  font-size: 1.4rem;
+  background-color: #ffffff;
+  border: solid 4px transparent;
+  border-image: linear-gradient(to right, orangered, transparent);
+  border-image-slice: 1;
+  color: black;
+}
+
+.gradient_btn_2:hover {
+  background: linear-gradient(to right, orangered, transparent);
+  border-right-style: none;
+}
+
+/* ==================
+gradient styling end
+================== */
+
+/* ==================
+Animated styling stard
+================== */
+.animated_btn_12 {
+  background: #8b8b8b;
+  height: 10rem;
+  width: 30rem;
+  margin: 5rem 0px;
+  align-items: center;
+}
+.animated_btn_header {
+  background-color: #ffe920;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+}
+.animated_btn_1 {
+  background: turquoise;
+  padding: 20px 40px;
+  border: solid 1px black;
+  align-items: center;
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px 0px 50px;
+  background-image: url(./pattern1.jpg);
+  background-size: 40px 40px;
+  color: rgb(255, 255, 255);
+  font-family: "Arial";
+  font-size: 1.2rem;
+  font-weight: bold;
+  outline: none;
+  transition: all ease 0.3s;
+  text-shadow: 0 -1px 0  rgb(255, 255, 255);
+}
+.animated_btn_1:hover {
+  animation: loading-button-animation 2s linear infinite;
+}
+@keyframes loading-button-animation {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+.animated_btn_2 {
+  position: relative;
+  display: inline-block;
+  background: #f5dd09;
+  padding: 20px 40px;
+  border: solid 1px black;
+  font-size: 1.2rem;
+  transition: all ease 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.animated_btn_2::after {
+  position: absolute;
+  top: 30%;
+  right: 0.6rem;
+  content: "»";
+  transition: all ease 0.3s;
+  opacity: 0;
+}
+.animated_btn_2:hover {
+  padding: 20px 60px 20px 20px;
+}
+.animated_btn_2:hover::after {
+  right: 2.5rem;
+  opacity: 1;
+}
+/* ==================
+Animated styling end
+================== */
+/* ==================
+Toggle Button styling start
+================== */
+.toggle_btn_12{
+  height: 10rem;
+  width: 30rem;
+  background-color: white;
+}
+.toggle-header{
+  color: white;
+  background-color: rgb(255, 0, 191);
+  text-align: center;
+  align-items:center;
+  padding: 10px;
+  font-family: sans-serif;
+  font-weight: 700;
+  
+}
+.toggle_1{
+  font-family: Helvetica, sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  margin: 3rem 15px 0 9rem;
+}
+.toggle1__input{
+  display: none;
+}
+.toggle1_button{
+  position: relative;
+  display:inline-block ;
+  font-size: 1rem;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #f2395a;
+  border: solid 1px #f2395a;
+  color: white;
+  width: 80px;
+  height: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.toggle1_button::before{
+  position: absolute;
+  content: "off";
+  display: inline-block;
+  height: 20px;
+  padding: 0 3px;
+  background-color: white;
+  color: #f2395a;
+  top: 5px;
+  left: 38px;
+  transition: all 0.5s ease;
+}
+.toggle1__input:checked + .toggle1_button{
+  background: aqua;
+  border: solid 1px aqua;
+
+
+}
+
+.toggle1__input:checked + .toggle1_button::before{
+  left: 5px;
+  content: "On";
+  color: aqua;
+}
+
+.toggle2{
+  font-family:  Helvetica, sans-serif;
+  font-size: 0.8rem;
+  display: inline-block;
+  vertical-align:top;
+  margin: 2.9rem 15px 0 0;
+}
+.toggle2__input{
+ display: none;
+}
+.toggle2__button{
+  position: relative;
+  display: inline-block;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: white;
+  color: #aaa;
+  border: solid 1px #ccc;
+  padding: 5px 10px 5px 30px ;
+  transition: all 0.3s ease;
+}
+.toggle2__button::before{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  content: "";
+  transition: all 0.3s ease;
+  border-radius: 100%;
+
+
+}
+.toggle2__input:checked + .toggle2__button{
+  background-color: aqua;
+  border:solid 1px aqua;
+  color: white;
+  
+}
+.toggle2__input:checked + .toggle2__button::before{
+  background-color: white;
+}
+/* ==================
+Toggle Button styling end
+================== */
